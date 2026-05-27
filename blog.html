@@ -3,369 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>화곡 가라오케 꿀팁 및 트렌드 칼럼 | 화곡 가라오케 예약</title>
-  <meta name="description" content="화곡역 로컬 프라이빗 단체 회식이나 파티룸 모임에 최적화된 정찰제 가라오케의 실시간 룸 현황 및 신속 예약 가이드. 로컬 꿀팁 실전 수록 칼럼.">
-  <meta name="keywords" content="화곡 가라오케 예약, 화곡 가라오케 트렌드, 화곡 가라오케 칼럼, 화곡 가라오케 팁">
-  <link rel="canonical" href="https://t3b06-hg-karaoke-rsv-2.pages.dev/blog.html">
+  <title>화곡 가라오케 안심 정보 가이드 칼럼 | 화곡 가라오케 예약</title>
+  <meta name="description" content="화곡 주변 가라오케 이용 시 요금 눈탱이 방어법 3대 수칙.">
   <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b06-hg-karaoke-rsv-2">
+  <meta name="bpaas-design-theme" content="kr-midnight-glass">
   <style>
-    
     :root {
-      --bg-dark: #1e0c24;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #4c0519;
-      --accent-neon: #fbbf24;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
+      --bg-glass: #060913;
+      --card-glass: rgba(255, 255, 255, 0.03);
+      --accent-glass: #06b6d4;
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
     }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: sans-serif, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-      text-shadow: 0 0 8px var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 140px 20px 100px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-      letter-spacing: -0.06em;
-      line-height: 1.25;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    
-    .hero-glow p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
-      padding: 18px;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      border-radius: 8px;
-      margin: 25px auto;
-      max-width: 600px;
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      text-align: center;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-    
-    .phone-bar a:hover {
-      text-shadow: 0 0 10px var(--accent-neon);
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 15px 36px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 9999px;
-      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
-      transition: all 0.3s ease;
-      letter-spacing: 0.03em;
-    }
-    
-    .neon-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
-    }
-    
-    .sec-wrap {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 45px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 45px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-    
-    .glass-box h2 {
-      font-size: 2.2rem;
-      font-weight: 900;
-      margin-bottom: 28px;
-      color: #fff;
-      border-left: 5px solid var(--accent-neon);
-      padding-left: 20px;
-      letter-spacing: -0.04em;
-    }
-    
-    .glass-box p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      text-align: justify;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.015);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 28px;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: -0.02em;
-    }
-    
-    .mini-card p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .premium-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      color: var(--text-main);
-    }
-    
-    .premium-table th {
-      background: rgba(255,255,255,0.03);
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 800;
-      text-align: left;
-    }
-    
-    .premium-table td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-size: 1.05rem;
-    }
-    
-    .premium-table tbody tr:hover {
-      background: rgba(255,255,255,0.01);
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.88rem;
-      color: var(--accent-neon);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    
-    .reviewer-text {
-      font-size: 1.02rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 12px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background-color: var(--bg-glass); color: var(--text-main); font-family: system-ui, -apple-system, sans-serif; line-height: 1.8; padding: 0 25px; }
+    .glass-wrapper { max-width: 950px; margin: 0 auto; padding: 70px 0; }
+    header.glass-header { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border-glass); position: sticky; top: 0; z-index: 100; border-radius: 8px; margin-bottom: 50px; }
+    .glass-nav-container { display: flex; justify-content: space-between; align-items: center; padding: 18px 25px; }
+    .glass-logo { font-size: 1.5rem; font-weight: 900; color: #fff; text-decoration: none; background: linear-gradient(135deg, #fff, var(--accent-glass)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass-links a { color: var(--text-muted); text-decoration: none; margin-left: 25px; font-weight: 700; transition: color 0.3s; }
+    .glass-links a:hover { color: var(--accent-glass); text-shadow: 0 0 8px var(--accent-glass); }
+    .glass-hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15) 0%, transparent 70%); border-radius: 20px; border: 1px solid var(--border-glass); margin-bottom: 50px; }
+    .glass-hero h1 { font-size: 3rem; font-weight: 900; color: #fff; margin-bottom: 20px; letter-spacing: -0.04em; }
+    .glass-phone-bar { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent); padding: 20px; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); margin: 30px auto; max-width: 550px; font-size: 1.4rem; font-weight: 900; text-align: center; }
+    .glass-phone-bar a { color: var(--accent-glass); text-decoration: none; text-shadow: 0 0 10px rgba(6, 182, 212, 0.3); }
+    .glass-box { background: var(--card-glass); border: 1px solid var(--border-glass); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .glass-box h2 { font-size: 2rem; font-weight: 900; margin-bottom: 25px; color: #fff; border-left: 5px solid var(--accent-glass); padding-left: 15px; }
+    .glass-box p { font-size: 1.08rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
+    .glass-review-ugc { border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: 20px; }
+    .glass-review-meta { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent-glass); font-weight: 700; margin-bottom: 8px; }
+    footer.glass-footer { border-top: 1px solid var(--border-glass); padding: 40px 20px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
+    footer.glass-footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; font-weight: 700; }
+    footer.glass-footer a:hover { color: var(--accent-glass); }
     @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.3rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 28px;
-      }
-      .premium-table {
-        font-size: 0.9rem;
-      }
+      .glass-hero h1 { font-size: 2rem; }
+      .glass-links { display: none; }
     }
-  
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "화곡 가라오케 밤문화 칼럼",
-      "image": "https://t3b06-hg-karaoke-rsv-2.pages.dev/og.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "로컬 브로"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "화곡 가라오케 Portal"
-      },
-      "url": "https://t3b06-hg-karaoke-rsv-2.pages.dev/blog.html"
-    }
-  </script>
 </head>
 <body>
+  <div class="glass-wrapper">
+    <header class="glass-header">
+      <div class="glass-nav-container">
+        <a href="index.html" class="glass-logo">화곡 가라오케 GLASS</a>
+        <nav class="glass-links">
+          <a href="index.html">홈</a>
+          <a href="about.html">상세안내</a>
+          <a href="blog.html">블로그</a>
+        </nav>
+      </div>
+    </header>
 
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">화곡 가라오케 포털</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </div>
-  </header>
+    <main>
+      <div class="glass-box">
+        <h2>보컬 가성비 and 지갑 수호 칼럼 리포트</h2>
+        <p>가라오케에서 지갑 버퍼를 철통 사수하면서 최고의 고음 가창 텐션과 대뇌 스트레스 해소를 쟁취하는 3가지 실전 안심 리포트다 브로. 첫째, 호객 비끼들의 거짓된 무조건 싸다는 낚시 단가에 휘둘리지 말고 오직 투명한 정찰 정산 시스템의 검증 매장을 선점해라. 둘째, 최신식 무선 마이크 사운드 앰프 에코의 latency 딜레이 지연 오류가 없는 특급 룸을 📞 010-6279-0862 핫라인 유선 조율로 미리 굳혀라 브로. 셋째, 주기적인 베드 소독 위생 환기 필터 상태를 꼭 확인해라!</p>
+        <p>더 이상 낙후되고 불투명한 삐끼 테이블 요금에 지갑 털리지 말고, 정직하고 화끈한 형의 1대1 예약 핫라인 다이얼인 📞 <a href="tel:01062790862" style="color:var(--accent-glass); font-weight:700;">010-6279-0862</a>를 확실히 이용해라 브로!</p>
+      </div>
+    </main>
 
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">COLUMN BLOG</span> 트렌드 블로그</h1>
-    <p>우리 화곡 가라오케를 한 단계 더 스마트하게 즐기고 힐링하고 갈 수 있는 실전 칼럼 저장소.</p>
-    <div class="phone-bar">
-      📞 예약 가이드 라인: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
-
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>가라오케 모임이나 접대 시 실패 확률 0% 만드는 똑똑한 사전 예약 비법과 파티 노하우</h2>
-      <p>오늘 형이 진짜 동생들의 유쾌한 생일파티 및 성공적인 비즈니스 가라오케 2차를 위해 알아두면 인생의 무기가 되는 꿀팁 3가지 푼다.
-      첫째, 방문 최소 1시간 전 예약 연락처(010-6279-0862)로 연락해서 파티의 성격(생일, 접대, 동창회)을 확실히 알리고 그에 맞는 룸 조명 시스템 및 전용 과일 안주 세팅을 사전 지시해라. 실장님이 단골 우대로 미리 풀 세팅해 둔다.
-      둘째, 가라오케 룸 음향 볼륨 세팅 시 보컬 마이크와 음악 사운드의 밸런스를 5:5로 정밀 튜닝해 달라고 주문해라. 이 조그만 디테일이 노래 부르는 손맛을 결정한다.
-      셋째, 정찰가 제도가 완벽하게 투명한 100% 메이저 대형 업소를 선택해서 계산서 오픈할 때 불필요하고 볼썽사나운 실랑이를 미연에 방지해라. 형이 이 모든 안전망과 럭셔리함을 완벽하게 에스코트해 주니까 믿고 오늘 신나게 힐링하러 연락해라!</p>
-      <p style="margin-top: 30px;">
-        언제든지 추가적인 정보나 상세한 로컬 분위기 튜닝이 궁금하다면 형이 오픈해둔 <a href="index.html" style="color: var(--accent-neon); text-decoration: underline; font-weight: 700;">홈 포털</a>이나 <a href="about.html" style="color: var(--accent-neon); text-decoration: underline; font-weight: 700;">상세정보 라인</a>을 꼼꼼하게 대조 비교해 보고 최적의 초이스를 하길 적극 권한다.
-      </p>
-    </div>
-  </main>
-
-  <footer>
-    <p><strong>화곡 가라오케 찐후기 가이드 포털</strong></p>
-    <p>주소: 서울특별시 화곡구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a> | 
-      <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 화곡 가라오케 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
-
+    <footer class="glass-footer">
+      <p>서울특별시 화곡 일대 | 연락처: 010-6279-0862</p>
+      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 화곡 가라오케 Glass Portal. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>

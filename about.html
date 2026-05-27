@@ -3,128 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 화곡 가라오케 상세 매뉴얼</title>
-  <meta name="description" content="가라오케 투명 예약의 절대 강자로 우뚝 서기까지 수많은 내상을 겪었음. 나도 젊은 날 화곡 먹자골목 근처 가라오케에서 기분 좋게 놀다가 정산 때 말도 안 되는 마담비, 테이블 팁 덤터기 쓰고 사기당한 아픈 과거가 있다. 그때 피눈물을 흘리며 결심했지. 내 강서 마포 바...">
+  <title>화곡 가라오케 상세정보 및 이용절차 | 화곡 가라오케 예약</title>
+  <meta name="description" content="화곡역 로컬 프라이빗 단체 회식이나 파티룸 모임에 최적화된 정찰제 가라오케의 실시간 룸 현황 및 신속 예약 가이드. 위치 시그널과 정찰 가격 안내 수록.">
+  <meta name="keywords" content="화곡 가라오케 예약, 화곡 가라오케 위치, 화곡 가라오케 가격, 화곡 가라오케 시스템">
   <link rel="canonical" href="https://t3b06-hg-karaoke-rsv-2.pages.dev/about.html">
   <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-t3b06-hg-karaoke-rsv-2">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     
-      :root {
-        --bg: #090d16;
-        --fg: #f1f5f9;
-        --accent: #a78bfa;
-        --muted: #94a3b8;
-        --border: rgba(255,255,255,0.08);
+    :root {
+      --bg-dark: #1e0c24;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --primary-neon: #4c0519;
+      --accent-neon: #fbbf24;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: sans-serif, -apple-system, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    
+    .glow-header {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+    }
+    
+    .logo-glow {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-neon);
+      text-shadow: 0 0 8px var(--accent-neon);
+    }
+    
+    .hero-glow {
+      padding: 140px 20px 100px;
+      text-align: center;
+      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
+      position: relative;
+    }
+    
+    .hero-glow h1 {
+      font-size: 3.2rem;
+      font-weight: 900;
+      margin-bottom: 24px;
+      letter-spacing: -0.06em;
+      line-height: 1.25;
+    }
+    
+    .gradient-txt {
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    .hero-glow p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto 35px;
+    }
+    
+    .phone-bar {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+      padding: 18px;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 600px;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    
+    .phone-bar a {
+      color: var(--accent-neon);
+      text-decoration: none;
+      transition: text-shadow 0.3s;
+    }
+    
+    .phone-bar a:hover {
+      text-shadow: 0 0 10px var(--accent-neon);
+    }
+    
+    .neon-btn {
+      display: inline-block;
+      padding: 15px 36px;
+      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 9999px;
+      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
+      transition: all 0.3s ease;
+      letter-spacing: 0.03em;
+    }
+    
+    .neon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
+    }
+    
+    .sec-wrap {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    
+    .glass-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 45px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 45px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .glass-box h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+      color: #fff;
+      border-left: 5px solid var(--accent-neon);
+      padding-left: 20px;
+      letter-spacing: -0.04em;
+    }
+    
+    .glass-box p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 36px;
+    }
+    
+    .mini-card {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .mini-card:hover {
+      border-color: var(--accent-neon);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+    }
+    
+    .mini-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    
+    .mini-card p {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    
+    .premium-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      color: var(--text-main);
+    }
+    
+    .premium-table th {
+      background: rgba(255,255,255,0.03);
+      padding: 16px;
+      border-bottom: 2px solid var(--border-color);
+      font-weight: 800;
+      text-align: left;
+    }
+    
+    .premium-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 1.05rem;
+    }
+    
+    .premium-table tbody tr:hover {
+      background: rgba(255,255,255,0.01);
+    }
+    
+    .ugc-review {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+    
+    .reviewer-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: var(--accent-neon);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .reviewer-text {
+      font-size: 1.02rem;
+      color: var(--text-main);
+      font-style: italic;
+    }
+    
+    footer {
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid var(--border-color);
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    
+    footer p {
+      margin-bottom: 12px;
+    }
+    
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: var(--accent-neon);
+    }
+    
+    @media(max-width: 768px) {
+      .hero-glow h1 {
+        font-size: 2.3rem;
       }
-      body { background: var(--bg); color: var(--fg); font-family: 'Pretendard', sans-serif; line-height: 1.8; }
-      header { border-bottom: 1px solid var(--border); padding: 20px 0; background: rgba(9, 13, 22, 0.8); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; }
-      .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 120px 0; text-align: center; background: radial-gradient(circle at center, rgba(167, 139, 250, 0.08), transparent 70%); }
-      .hero h1 { font-size: 3.2rem; font-weight: 800; color: #fff; margin-bottom: 20px; text-shadow: 0 0 20px rgba(167, 139, 250, 0.2); }
-      .btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #a78bfa, #7c3aed); color: #fff; text-decoration: none; font-weight: 700; border-radius: 30px; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3); transition: all 0.3s; }
-      .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5); }
-      .content-section { padding: 80px 0; }
-      .card { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); backdrop-filter: blur(8px); padding: 30px; border-radius: 16px; margin-bottom: 24px; }
-      .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
-      .review-card { background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); padding: 24px; border-radius: 16px; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 2px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
+      .nav-links {
+        display: none;
+      }
+      .glass-box {
+        padding: 28px;
+      }
+      .premium-table {
+        font-size: 0.9rem;
+      }
+    }
+  
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "화곡 가라오케 상세정보",
+      "url": "https://t3b06-hg-karaoke-rsv-2.pages.dev/about.html",
+      "description": "화곡 가라오케의 상세 위치, 이용 프로세스 및 예약 가격 안내."
+    }
+  </script>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">화곡.가라오케</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
+
+  <header class="glow-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-glow">화곡 가라오케 포털</a>
+      <nav class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="about.html">상세정보</a>
+        <a href="blog.html">블로그</a>
+      </nav>
     </div>
   </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
-    </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">가라오케 투명 예약의 절대 강자로 우뚝 서기까지 수많은 내상을 겪었음. 나도 젊은 날 화곡 먹자골목 근처 가라오케에서 기분 좋게 놀다가 정산 때 말도 안 되는 마담비, 테이블 팁 덤터기 쓰고 사기당한 아픈 과거가 있다. 그때 피눈물을 흘리며 결심했지. 내 강서 마포 바닥 가라오케 밤문화는 100% 투명하고 정직한 정찰제 시스템으로 싹 다 갈아엎겠다고. 그렇게 완성된 VIP 직통 예약 라인이 바로 010-6279-0862다.</p>
-        </div>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
+  <section class="hero-glow">
+    <h1><span class="gradient-txt">DETAILED INFO</span> 상세 정보</h1>
+    <p>화곡 로컬로서 형들이 헛돈 쓰는 일 절대 없도록 확실한 랜드마크와 투명 주종 가격을 공개합니다.</p>
+    <div class="phone-bar">
+      📞 실시간 직통 전화: <a href="tel:010-6279-0862">010-6279-0862</a>
+    </div>
+  </section>
+
+  <main class="sec-wrap">
+    <div class="glass-box">
+      <h2>스토리 & 이용 동기</h2>
+      <p>럭셔리 가라오케의 정직한 가치와 단골 신뢰를 수호하기 위해 인생을 바쳤음. 나 또한 젊은 날 소중한 거래처 손님 접대를 다닐 때, 눈탱이만 씌우고 마인드 썩어빠진 업주들 때문에 분위기 엉망이 되고 돈 수백만 원만 날려 회사에서 감봉 조치까지 당했던 피눈물 나는 쓰라린 실패를 겪은 바 있다. 그때 뼈저리게 맹세했지. 내 마포 강서 일대 하늘 아래에서는 동생들과 형님들이 안심하고 100% 품위를 지키며 합리적으로 놀 수 있는 진짜 VIP 가라오케 라운지의 참된 표본을 만들겠다고. 그렇게 다듬어진 1등 예약 채널이 바로 010-6279-0862다.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>상세 위치 시그널 & 인프라</h2>
+      <p>📌 럭셔리 위치 및 보안성 가이드: 화곡 역세권 고급 상업 지구 금자탑 빌딩 전 층에 입점해 있어 찾아오기 개꿀이며, 전용 엘리베이터 지하 주차장 연결로 다이렉트 프라이빗 비밀 입장을 완벽 지원하여 신변 안전과 프라이버시가 완벽 보장된다. 최신형 명품 사운드 시스템 완비.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>투명 정찰 가격표</h2>
+      <p>애초에 빌지 장난을 원천 차단하기 위해 주종 및 시간 코스 견적을 명확히 고시합니다.</p>
+      
+        <table class="premium-table">
           <thead>
-            <tr><th>VIP 가라오케 세트</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
+            <tr><th>VIP 가라오케 패키지</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
           </thead>
           <tbody>
-            <tr><td>정통 가라오케 골드 A</td><td>90분</td><td>180,000원</td><td><strong>150,000원</strong></td></tr>
-            <tr><td>최고급 스페셜 프리미엄 B</td><td>90분</td><td>280,000원</td><td><strong>230,000원</strong></td></tr>
-            <tr><td>VVIP 마스터 플래티넘 C</td><td>120분</td><td>450,000원</td><td><strong>380,000원</strong></td></tr>
+            <tr><td>스탠다드 맥주 세트 패키지 A</td><td>90분</td><td>150,000원</td><td><strong>130,000원</strong></td></tr>
+            <tr><td>골드 위스키 프리미엄 세트 B</td><td>90분</td><td>250,000원</td><td><strong>200,000원</strong></td></tr>
+            <tr><td>VIP 명품 로열 패키지 세트 C</td><td>120분</td><td>380,000원</td><td><strong>300,000원</strong></td></tr>
           </tbody>
         </table>
       
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">상세 위치 및 내부 편의 사양: 화곡 역전 랜드마크 스퀘어 바로 건너편 빌딩 3, 4층 대규모 매장으로 넓은 주차 타워 보유 및 발렛파킹 서비스 풀지원합니다. 최고급 명품 앰프 스피커 세팅 완비!</p>
-        </div>
-
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>유해진</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">음향이 진짜 명품이네요. 에코가 촉촉하게 묻어나서 노래 부를 때 가수가 된 것 같았습니다 ㅋㅋㅋ</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-22</small>
     </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>조진웅</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+
+    <div class="glass-box">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 예약 없이 바로 매장으로 가도 되나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 주말이나 피크 타임에는 룸이 풀로 차서 워크인으로 오시면 대기 시간이 2~3시간씩 걸리거나 헛걸음하기 쉽습니다. 형들의 골든타임을 사수하고 실시간 대기실 가동 룸을 확보하기 위해 오시기 최소 30분 전 010-6279-0862 예약센터로 전화 한 통만 때려주시길 정중히 권합니다!</p>
       </div>
-      <p style="font-size:0.9rem; color:var(--muted);">상수 가라오케 예약 최고네요. 010-6279-0862 실장님 시원시원하시고 약속한 가격 그대로 다 세팅해 줍니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-26</small>
-    </div>
-  </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 화곡 가라오케 스페셜 가이드. All Rights Reserved.</div>
       <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 정찰가 외에 현장 빌지 추가금 청구가 있나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 단 10원짜리 하나도 허위나 부가 요금을 추가 청구하지 않습니다. 예약 단계에서 합의된 정찰 요금 그대로 카드/현금 깔끔 정산 마감해 드리니 눈탱이 걱정은 싹 접어두셔도 좋습니다!</p>
       </div>
     </div>
+  </main>
+
+  <footer>
+    <p><strong>화곡 가라오케 찐후기 가이드 포털</strong></p>
+    <p>주소: 서울특별시 화곡구 일대 | 연락처: 010-6279-0862</p>
+    <p>
+      <a href="index.html">홈</a> | 
+      <a href="about.html">상세정보</a>
+      | <a href="blog.html">블로그</a>
+    </p>
+    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 화곡 가라오케 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
   </footer>
+
 </body>
 </html>

@@ -1,77 +1,346 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>화곡 가라오케 상세 정보 | 화곡 가라오케 예약</title>
-  <meta name="description" content="화곡의 대표 명소인 화곡역 8번 출구, 화곡본동 시장, 강서구청 인근 최상급 가라오케 팩트북 가이드.">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-midnight-glass">
-  <style>
-    :root {
-      --bg-glass: #060913;
-      --card-glass: rgba(255, 255, 255, 0.03);
-      --accent-glass: #06b6d4;
-      --border-glass: rgba(255, 255, 255, 0.08);
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background-color: var(--bg-glass); color: var(--text-main); font-family: system-ui, -apple-system, sans-serif; line-height: 1.8; padding: 0 25px; }
-    .glass-wrapper { max-width: 950px; margin: 0 auto; padding: 70px 0; }
-    header.glass-header { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border-glass); position: sticky; top: 0; z-index: 100; border-radius: 8px; margin-bottom: 50px; }
-    .glass-nav-container { display: flex; justify-content: space-between; align-items: center; padding: 18px 25px; }
-    .glass-logo { font-size: 1.5rem; font-weight: 900; color: #fff; text-decoration: none; background: linear-gradient(135deg, #fff, var(--accent-glass)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .glass-links a { color: var(--text-muted); text-decoration: none; margin-left: 25px; font-weight: 700; transition: color 0.3s; }
-    .glass-links a:hover { color: var(--accent-glass); text-shadow: 0 0 8px var(--accent-glass); }
-    .glass-hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15) 0%, transparent 70%); border-radius: 20px; border: 1px solid var(--border-glass); margin-bottom: 50px; }
-    .glass-hero h1 { font-size: 3rem; font-weight: 900; color: #fff; margin-bottom: 20px; letter-spacing: -0.04em; }
-    .glass-phone-bar { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent); padding: 20px; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); margin: 30px auto; max-width: 550px; font-size: 1.4rem; font-weight: 900; text-align: center; }
-    .glass-phone-bar a { color: var(--accent-glass); text-decoration: none; text-shadow: 0 0 10px rgba(6, 182, 212, 0.3); }
-    .glass-box { background: var(--card-glass); border: 1px solid var(--border-glass); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-    .glass-box h2 { font-size: 2rem; font-weight: 900; margin-bottom: 25px; color: #fff; border-left: 5px solid var(--accent-glass); padding-left: 15px; }
-    .glass-box p { font-size: 1.08rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
-    .glass-review-ugc { border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: 20px; }
-    .glass-review-meta { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent-glass); font-weight: 700; margin-bottom: 8px; }
-    footer.glass-footer { border-top: 1px solid var(--border-glass); padding: 40px 20px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
-    footer.glass-footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; font-weight: 700; }
-    footer.glass-footer a:hover { color: var(--accent-glass); }
-    @media(max-width: 768px) {
-      .glass-hero h1 { font-size: 2rem; }
-      .glass-links { display: none; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화곡 가라오케 정보 | 위치, 시설, 꿀팁 대방출</title>
+    <meta name="description" content="화곡 가라오케 No.1 예약 정보. 24시 실시간 확인, 단체/커플룸 완비. 주차 가능, 역 도보 5분. 친구랑 와서 기절각 잡는 곳. 전화 010-6279-0862">
+    <meta name="keywords" content="화곡 가라오케 정보, 화곡 노래방 위치, 화곡 가라오케 시설, 화곡 역 노래방, 화곡 가라오케 추천">
+    <link rel="canonical" href="https://t3b06-hg-karaoke-rsv-2.vercel.app/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <!-- OG + Twitter Card -->
+    <meta property="og:title" content="화곡 가라오케 정보 | 010-6279-0862">
+    <meta property="og:description" content="화곡 가라오케 No.1 예약 정보. 24시 실시간 확인, 단체/커플룸 완비. 주차 가능, 역 도보 5분. 지금 전화주세요">
+    <meta property="og:image" content="https://t3b06-hg-karaoke-rsv-2.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://t3b06-hg-karaoke-rsv-2.vercel.app/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="화곡 가라오케 정보 | 010-6279-0862">
+    <meta name="twitter:description" content="화곡 가라오케 No.1 예약 정보. 24시 실시간 확인, 단체/커플룸 완비. 주차 가능, 역 도보 5분.">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        /* ===== SPACE: airy ===== */
+        :root {
+            --space-unit: 1.5rem;
+            --content-max-width: 1200px;
+            --border-thick: 4px;
+            --color-primary: #ff007f;
+            --color-secondary: #00f0ff;
+            --color-accent: #ffd700;
+            --color-bg: #0a0a0a;
+            --color-text: #f0f0f0;
+            --color-muted: #888;
+            --neon-glow: 0 0 10px rgba(255, 0, 127, 0.5);
+        }
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            color: var(--color-primary);
+            text-shadow: 2px 2px 0 var(--color-secondary), var(--neon-glow);
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: clamp(1.6rem, 4vw, 2.8rem);
+            color: var(--color-secondary);
+            border-bottom: var(--border-thick) solid var(--color-primary);
+            padding-bottom: 0.3em;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        a {
+            color: var(--color-accent);
+            text-decoration: underline wavy var(--color-primary);
+            transition: all 0.2s;
+        }
+        a:hover, a:focus {
+            color: var(--color-primary);
+            text-decoration: underline wavy var(--color-secondary);
+        }
+        /* ===== BRUTALIST ELEMENTS ===== */
+        .container {
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-unit);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-bg);
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border: var(--border-thick) solid var(--color-secondary);
+            cursor: pointer;
+            transition: 0.1s linear;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: var(--color-secondary);
+            border-color: var(--color-primary);
+            color: var(--color-bg);
+            transform: scale(0.95);
+        }
+        .card {
+            background: #111;
+            border: var(--border-thick) solid var(--color-muted);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 8px 8px 0 rgba(255, 0, 127, 0.2);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-unit);
+        }
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ===== NAV ===== */
+        .nav-bar {
+            background: #0a0a0a;
+            border-bottom: var(--border-thick) solid var(--color-primary);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            padding: 0.75rem var(--space-unit);
+        }
+        .nav-logo a {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            padding: 0.25rem 0.5rem;
+            border: 2px solid transparent;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+        }
+        /* 햄버거 메뉴 */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.25rem;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: var(--color-text);
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0a0a0a;
+                flex-direction: column;
+                padding: 1rem;
+                border-bottom: var(--border-thick) solid var(--color-primary);
+                gap: 0.75rem;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+        }
+        .footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: var(--border-thick) solid var(--color-muted);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-muted);
+        }
+        .tel-link {
+            display: inline-block;
+            background: var(--color-accent);
+            color: #0a0a0a;
+            font-weight: 800;
+            font-size: 1.4rem;
+            padding: 0.5rem 1.2rem;
+            border: 3px solid var(--color-primary);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: var(--color-primary);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .info-highlight {
+            background: #1a1a1a;
+            border-left: 8px solid var(--color-primary);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h4 {
+            color: var(--color-accent);
+            cursor: default;
+        }
+        .faq-item p {
+            margin-top: 0.25rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="glass-wrapper">
-    <header class="glass-header">
-      <div class="glass-nav-container">
-        <a href="index.html" class="glass-logo">화곡 가라오케 GLASS</a>
-        <nav class="glass-links">
-          <a href="index.html">홈</a>
-          <a href="about.html">상세안내</a>
-          <a href="blog.html">블로그</a>
-        </nav>
-      </div>
-    </header>
+    <!-- 네비게이션 -->
+    <nav class="nav-bar" role="navigation">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="화곡 가라오케 홈">화곡Karaoke</a>
+            </div>
+            <button class="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="reservation.html">예약</a></li>
+                <li><a href="info.html" class="active">정보</a></li>
+                <li><a href="reviews.html">후기</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-      <div class="glass-box">
-        <h2>로컬 상세 지리 가이드 및 위생 평가</h2>
-        <p>가라오케 매니아 브로들을 위해 100% 정직한 팩트와 정찰제 가격 정보만을 집대성한 가라오케 가이드북 아카이브 페이지다 브로. 삐끼 거품과 터무니없는 양주 세트 요금 청약 마찰을 원천 차단하고 오직 럭셔리하고 쾌적한 힐링을 보장받을 수 있는 안전지대 루트다. 📞 010-6279-0862 번호를 스마트폰 주소록에 꼭 단골 세팅해 두고 놀러 가기 전에 안심 지대를 확보하길 바란다.
-      
-      이곳 가라오케 룸에서 대뇌 도파민 제대로 충전하고 간 브로들의 리얼 이용 평가다:
-      - **연남동다이내믹 (29, 컨텐츠 기획자)**: '친구들 단체 모임 회식이라 가라오케 예약이 급했는데, 형의 예약 다이얼 010-6279-0862 로 전화하니까 VIP 단체 대형 룸에 음향 기기도 빵빵하고 과일 안주 서비스까지 혜자롭게 주셔서 아주 잘 놀았습니다!'
-      - **접대의달인 (33, 건설사 영업팀)**: '거래처 바이어 분들 프라이빗하게 모셔야 해서 긴장했는데, 계산할 때 처음 합의한 금액 그대로 10원 장난 없이 정산 처리되어 완전 감동받았습니다 브로. 위생 살균 상태도 아주 최상급이었습니다.'
-      - **가성비수호 (30, 자영업)**: '매주 한 번은 달리는 가라오케 매니아인데 위생 등급부터 룸 청결 상태, 사운드 주파수 튜닝 퀄리티까지 이곳이 단연 원탑입니다. 강추합니다!'</p>
-        <p>엄선 제휴 스팟들은 화곡역 8번 출구, 화곡본동 시장, 강서구청와 물리적으로 밀착되어 있어 초행길이라도 아주 수월하게 찾을 수 있다 브로. 📞 010-6279-0862 로 미리 다이렉트 통화를 걸어 안전지대를 확실히 선점하고 지갑 버퍼를 굳건히 수호해라 브로!</p>
-      </div>
-    </main>
+    <main class="container" style="padding-top: 2rem;">
+        <!-- 페이지 헤더 -->
+        <section style="margin-bottom: 3rem;">
+            <h1>📍 정보 다 알려줌</h1>
+            <p style="font-size: 1.2rem; color: var(--color-muted);">화곡 가라오케 예약 전에 꼭 봐야 할 꿀팁, 위치, 시설 전부 공개. 형들 여기 실화냐?</p>
+        </section>
 
-    <footer class="glass-footer">
-      <p>서울특별시 화곡 일대 | 연락처: 010-6279-0862</p>
-      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 화곡 가라오케 Glass Portal. All Rights Reserved.</p>
-    </footer>
-  </div>
+        <!-- 위치 & 오시는 길 -->
+        <section class="card">
+            <h2>🚇 오시는 길</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>화곡역 4번 출구 도보 5분</h3>
+                    <p>서울 강서구 화곡동 메인 스트리트. 골목 하나만 들어오면 바로 보여. 네비 찍으면 진심 100% 찾아옴. <strong>주차 가능</strong> (차량 10대 정도) — 근데 웬만하면 대중교통 추천. 금요일 밤엔 주차장 전쟁임 ㅋㅋ</p>
+                    <p><strong>주소:</strong> 서울 강서구 화곡로 123길 45 (지번: 화곡동 987-6)</p>
+                    <a href="https://map.naver.com/?pin=37.5417,126.8415" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 0.5rem;">네이버 지도 보기</a>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/400x250/1a1a1a/ff007f?text=MAP+VIEW" alt="화곡 가라오케 위치 지도" style="width:100%; border: 3px solid var(--color-secondary);">
+                </div>
+            </div>
+        </section>
+
+        <!-- 시설 & 룸 -->
+        <section class="card">
+            <h2>🎤 룸 시설 완벽 정리</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>단체룸 (4~15인)</h3>
+                    <ul style="margin-left: 1.2rem; margin-bottom: 1rem;">
+                        <li>JBL 사운드 + 서브우퍼</li>
+                        <li>65인치 LED 스크린</li>
+                        <li>무선 마이크 4개</li>
+                        <li>에어컨 빵빵, 환풍기 완벽</li>
+                    </ul>
+                    <p>친구들 여럿 와서 <strong>진짜 기절각</strong> 잡는 곳. 전날 놀다가 아침에 깨니까 다 기절해있더라 ㅋㅋㅋ</p>
+                </div>
+                <div>
+                    <h3>커플룸 (2~3인)</h3>
+                    <ul style="margin-left: 1.2rem; margin-bottom: 1rem;">
+                        <li>개인 음향 시스템</li>
+                        <li>아이패드 곡 선택</li>
+                        <li>캔들 + 무드등</li>
+                        <li>소파 2인 + 테이블</li>
+                    </ul>
+                    <p>데이트하기 좋아. 둘이서 부르다 보면 시간 개빠름. <strong>노래방이 아니라 감성 사우나</strong> 수준.</p>
+                </div>
+            </div>
+            <div class="info-highlight">
+                <p style="margin:0; font-weight:700;">💡 모든 룸은 <strong>24시간 운영</strong> + <strong>예약 필수</strong> (특히 주말). 전화 010-6279-0862로 실시간 확인 가능!</p>
+            </div>
+        </section>
+
+        <!-- 운영 시간 & 요금 -->
+        <section class="card">
+            <h2>⏰ 운영 시간 & 요금</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                <div>
+                    <p><strong>운영 시간:</strong> 24시간 (연중무휴)</p>
+                    <p><strong>단체룸:</strong> 시간당 25,000원 (2시간 기본)</p>
+                    <p><strong>커플룸:</strong> 시간당 18,000원 (1.5시간 기본)</p>
+                    <p><strong>심야 할인 (23:00~05:00):</strong> 20% OFF</p>
+                </div>
+                <div>
+                    <p style="color: var(--color-accent); font-weight: 800;">🔥 선착순 이벤트: 전화 예약 시 룸 업그레이드 or 음료 서비스</p>
+                    <a href="tel:+821062790862" class="tel-link">📞 010-6279-0862</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 지역 시그널
 </body>
 </html>

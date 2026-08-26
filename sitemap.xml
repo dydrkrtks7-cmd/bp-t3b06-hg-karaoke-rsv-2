@@ -16,11 +16,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0188.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0189.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -32,6 +27,76 @@
   </url>
   <url>
     <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0191.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0201.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260721-0032.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260721-0034.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260722-0318.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/interview-001-1s7a1g9.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/review-001-1dmfzg4.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/t3link-002-1s7a1g9.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/juice-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/juice-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0188.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -81,11 +146,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0201.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260719-0202.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -101,17 +161,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260721-0032.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260721-0033.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260721-0034.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -161,62 +211,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260722-0318.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://hwagok-info-tip.link-hub.org/posts/gemini-coverage-20260722-0319.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/interview-001-1s7a1g9.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/juice-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/juice-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/normal-3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/review-001-1dmfzg4.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts/t3link-002-1s7a1g9.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hwagok-info-tip.link-hub.org/posts-2.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
